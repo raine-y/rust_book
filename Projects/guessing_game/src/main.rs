@@ -4,7 +4,7 @@ use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
-    let secret_number = rand::thread_rng().gen_range(1..=100);
+    let secret_number = rand::rng().random_range(1..=100);
     println!("The secret number is: {secret_number}");
    loop { //loops...
         println!("Your guess is: ");
@@ -12,7 +12,11 @@ fn main() {
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue, // _ is catch-all value, continue restarts loop
+        };
+
         // Trim method eliminates white space, parse converts string to other type,  
         // : u32 tells rust data-type to parse to
         // +-+
