@@ -46,6 +46,16 @@ fn main() {
     let f: bool = false;
     println!("{t} or {f}?");
     let string: char= 's';
-    println!("String is {string}");    
+    println!("String is {string}");   
     // *COMPOUND TYPES
+    println!("");
+    println!("~ Compound Types ~");
+    println!("");
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (_x, y,_z) = tup;
+    println!("The value of y is: {y}");
+    let _months= ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+    let _a: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("months[0]");
 }
