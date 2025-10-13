@@ -42,5 +42,10 @@ fn main() {
     // remainder
     let remainder = 43 % 5;
     println!("~ The value of remainder(%) is: {remainder}");
+    let t = true;
+    let f: bool = false;
+    println!("{t} or {f}?");
+    let string: char= 's';
+    println!("String is {string}");    
     // *COMPOUND TYPES
 }
