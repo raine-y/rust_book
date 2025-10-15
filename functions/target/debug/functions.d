@@ -1,1 +1,1 @@
-/Users/raine/Desktop/workspace/rust-book/functions/target/debug/functions: /Users/raine/Desktop/workspace/rust-book/functions/src/main.rs
+/Users/raine/Desktop/workspace/rust_book/functions/target/debug/functions: /Users/raine/Desktop/workspace/rust_book/functions/src/main.rs
