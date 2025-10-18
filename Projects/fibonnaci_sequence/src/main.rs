@@ -16,7 +16,7 @@ fn main() {
 
 fn fibonacci(nth: u64) -> u64 {
     if nth <= 0 {
-        return 0;
+        return 0; // RETURN
     } else if nth == 1 {
         return 1;
     } else {

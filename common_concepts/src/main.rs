@@ -118,4 +118,11 @@ fn main() {
         println!("the value is: {}", a[index]);
         index += 1;
     }
+    fn liftoff() {
+        for number in (1..4).rev() {
+            println!("{number}!");
+        }
+        println!("LIFTOFF!!!");
+    }
+    liftoff();
 }
